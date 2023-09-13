@@ -11,21 +11,22 @@ predicting and detecting anomalies during the electrical discharge machining (ED
 of existing solutions was conducted, emphasizing the utilization of machine learning techniques. Specifically, two
 primary models were proposed and implemented: a supervised Long Short-Term Memory (LSTM) neural network model and an
 unsupervised Convolutional Neural Network (CNN)-based autoencoder model. Both models demonstrated effectiveness in
-predicting the behavior of time series, including prediction and anomaly detection. The autoencoder model proved
+predicting time series behavior, including prediction and anomaly detection. The autoencoder model proved
 particularly valuable, enabling efficient labeling of unlabeled data, which is crucial for further data analysis.
 
 ### Presentation of the problem
 During the process of electrical discharge machining, there can be instances of material discontinuity, which is an
 undesirable phenomenon. When this occurs in time series data representing the characteristics of parameter values
-related to the process, anomalies become evident.These anomalies are indicated by a binary machine parameter that
+related to the process, anomalies become evident. These anomalies are indicated by a binary machine parameter that
 signals the occurrence of a breakthrough. This parameter has a delay (Fig 1).
 
-![img.png](img.png)
+![image](https://github.com/dawikrol/TimeSeries_Anomaly_Detector/assets/63808220/95423171-413b-4686-99e8-9145c4f199d2)
+
 
 _Fig 1: Examples of anomalies. On the left there is a sample with a break, on the right there is a sample without a
 break. BT-Detect - binary parameter indicating breakdown detection._
 
-The aim of the thesis was to present a preliminary solution that demonstrates how the use of machine learning tools can
+The aim of the thesis was to present a preliminary solution that demonstrates how the use of machine-learning tools can
 advance the marking of the BT-Detect parameter and predict faults even before they occur.
 
 ### Results
@@ -38,9 +39,9 @@ approaches is not straightforward. The LSTM-based model directly forecasts the t
 autoencoder-based model takes advantage of the fact that this parameter has a delay compared to the occurrence of
 anomalies, which is its characteristic feature. Thus, the autoencoder-based model eliminates the delay in the target
 parameter, providing a significant advantage in early anomaly detection. It's worth noting that these two models don't
-necessarily have to compete with each other but can be used synergistic.
+necessarily have to compete with each other but can be used synergistically.
 
-![img_1.png](img_1.png)
+![image](https://github.com/dawikrol/TimeSeries_Anomaly_Detector/assets/63808220/96483645-bf22-4495-bbe4-ba9f6b3f7c01)
 
 _Fig 2: Anomaly detection by LSTM model and Autoencoder._
 
