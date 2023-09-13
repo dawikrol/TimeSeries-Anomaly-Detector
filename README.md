@@ -3,6 +3,14 @@
 The repository contains the source code for the implementation of my master's thesis on the detection and prediction of
 anomalies in multidimensional time series data.
 
+## Table of Contents
+- [Master thesis summary](#master-thesis-summary)
+- [Presentation of the problem](#presentation-of-the-problem)
+- [Results](#results)
+- [Code and implementation notes](#code-and-implementation-notes)
+
+---
+
 ### Master thesis summary
 In today's rapidly advancing technological world, the analysis and prediction of time series data are integral
 components of many fields, including industry, particularly in the context of the growing role of the Internet of
